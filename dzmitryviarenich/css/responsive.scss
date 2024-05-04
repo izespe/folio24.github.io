@@ -392,9 +392,6 @@ $bg: #f8f8f7;
           .right {
             width: 100%;
             pointer-events: none;
-            img {
-              padding: 12px;
-            }
           }
           .wireframes-wrapper img {
             max-width: 240px;
@@ -641,22 +638,22 @@ $bg: #f8f8f7;
       }
     }
     .case-page-preview {
-       .preview-images {
-            position: relative;
-            img.center-img {
-                width: 38%;
-            }
-            img{
-                width: 31%;
-                position: absolute;
-                &:nth-last-child(1){
-                    right: -10%;
-                }
-                &:nth-child(1){
-                    left: -10%;
-                }
-            }
+      .preview-images {
+        position: relative;
+        img.center-img {
+          width: 38%;
         }
+        img {
+          width: 31%;
+          position: absolute;
+          &:nth-last-child(1) {
+            right: -10%;
+          }
+          &:nth-child(1) {
+            left: -10%;
+          }
+        }
+      }
       .container {
         padding: 24px 24px;
       }
@@ -736,7 +733,7 @@ $bg: #f8f8f7;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 431px) {
   .main-page {
     header {
       .container {
@@ -747,7 +744,7 @@ $bg: #f8f8f7;
       }
       .photo .portrait-line {
         zoom: 0.8;
-        margin-top: 24px;
+        margin-top: 32px;
       }
 
       .navbar {
@@ -774,11 +771,11 @@ $bg: #f8f8f7;
         }
       }
       .hero {
-        padding: 32px 0;
+        padding: 64px 0;
       }
       .intro {
-        align-items: start;
-        text-align: left;
+        align-items: center;
+        text-align: center;
         h2 {
           font-size: 32px;
           font-weight: 600;
@@ -812,10 +809,10 @@ $bg: #f8f8f7;
           font-size: 16px;
         }
         .btn {
-          min-width: 102px;
-          width: 100%;
+          min-width: 120px;
           text-align: center;
           margin-top: 20px;
+          padding: 12px 14px;
           &.btn-swipe:hover {
             box-shadow: inset 360px 0 0 0 #111111;
             color: #fff;
@@ -835,5 +832,69 @@ $bg: #f8f8f7;
         }
       }
     }
+  }
+
+  .case-page .case .container .case-row .left {
+    width: 100%;
+  }
+  .case-page .case.research .container .case-single-row p {
+    max-width: 100%;
+  }
+  .case-page .case .container .case-row .wireframes-wrapper img {
+    width: 42%;
+    max-width: 50%;
+  }
+  .case-page .case.visual .full-w-banner {
+    flex-direction: column;
+  }
+  .case-page .case .full-w-banner.videos .left,
+  .case-page .case .full-w-banner.videos .right {
+    width: 100%;
+  }
+  .case-page .case .full-w-banner.videos .media-content {
+    max-width: 65%;
+  }
+  footer .container .wrapper .more-analyzers {
+    margin-left: 0;
+  }
+  footer .container .wrapper .more-lup {
+    margin-right: 0;
+  }
+  .case-page
+    footer
+    .container
+    .wrapper
+    .card
+    .user-content.show-on-mobile
+    .name {
+    padding: 12px 20px 12px 0;
+  }
+  .case-page footer .container h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-page header .intro p {
+    max-width: 92%;
+  }
+  .main-page main .case .btn {
+    width: 100%;
+  }
+  .case-page .case .full-w-banner.videos .media-content {
+    max-width: 70%;
+  }
+  .case-page
+    footer
+    .container
+    .wrapper
+    .card
+    .user-content.show-on-mobile
+    .name
+    h3 {
+    font-size: 16px;
+  }
+  footer .container .wrapper .card .name p {
+    font-size: 14px;
   }
 }

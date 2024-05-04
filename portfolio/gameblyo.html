@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello! My name is Dmitry.</title>
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(window).on("load", function () {
+        var $preloader = $("#p_prldr"),
+          $svg_anm = $preloader.find(".svg_anm");
+        $svg_anm.fadeOut();
+        $preloader.delay(500).fadeOut("slow");
+      });
+    </script>
+    <script></script>
+  </head>
+  <body class="case-page gameblyo">
+    <header>
+      <nav class="navbar ink-effect-3" id="link-effect-3">
+        <div class="container">
+          <h1 class="logo"><a href="index.html">Portfolio <span>/</span></a></h1>
+          <ul>
+            <li>
+              <a
+                href="pdf/Verenich-Dmitry-CV.pdf"
+                target="_blank"
+                class="btn stack"
+                data-hover="Resume"
+                ><span class="icon"><span class="arrow"></span></span>Resume</a
+              >
+            </li>
+            <li><a href="" data-hover="LinkedIn">LinkedIn</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="case-page-preview">
+        <div class="container">
+          <div class="breadcrumbs-wrapper">
+            <svg
+              width="16px"
+              height="24px"
+              viewBox="6 0 16 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.2431 6.34317L14.8288 4.92896L7.75781 12L14.8289 19.0711L16.2431 17.6569L10.5862 12L16.2431 6.34317Z"
+              />
+            </svg>
+            <a href="index.html" data-hover="Back&nbsp;to&nbsp;Main"
+              >Back&nbsp;to&nbsp;Main</a
+            >
+          </div>
+          <h1>Gameblyo</h1>
+        </div>
+        <section class="wrapper">
+          <div class="blur bubble1"></div>
+          <div class="blur bubble2"></div>
+          <div class="blur bubble3"></div>
+          <div class="blur bubble4"></div>
+          <div class="blur bubble5"></div>
+          <div class="noize">
+            <div class="container preview-images">
+              <img src="img/gameblyo/gameblyo-preview1.png" alt="" />
+              <img
+                class="center-img"
+                src="img/gameblyo/gameblyo-preview2.png"
+                alt=""
+              />
+              <img src="img/gameblyo/gameblyo-preview3.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="case overview">
+        <div class="container">
+          <h3>Overview</h3>
+          <div class="case-single-row ">
+            <p>
+              Gameblyo offers personalized vision therapy for&nbsp;amblyopia
+              using web/mobile apps, red-cyan glasses, and a&nbsp;tracking
+              platform. The&nbsp;platform monitors progress, allowing adaptable
+              therapy. Red-cyan glasses split images for&nbsp;each eye,
+              stimulating them differently.
+            </p>
+            <p>
+              This method enhances individual eye stimuli and trains
+              the&nbsp;brain for&nbsp;synchronized use of both eyes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case problem">
+        <div class="container">
+          <h3>Problem</h3>
+          <div class="case-row">
+            <div class="left">
+              <h4>What is Amblyopia?</h4>
+              <p>
+                <span>Amblyopia</span> aka <span>Lazy Eye</span> is an eye
+                condition when the vision of one of your eyes doesn’t develop
+                the way it should. Without treatment, your brain will learn to
+                ignore the image that comes from the weaker eye.
+              </p>
+            </div>
+
+            <div class="right">
+              <img src="../portfolio/img/gameblyo/problem1.png" alt="" />
+            </div>
+          </div>
+          <div class="case-row target-aud">
+            <div class="left">
+              <h4>Target Audience</h4>
+              <p>
+                People suffering from amblyopia, mostly children form 3 to 12
+                years old
+              </p>
+              <h4>Problem statements</h4>
+              <ul>
+                <li>
+                  The need to wear an eye patch for too long time. (avg. 4-6 hrs
+                  per day)
+                </li>
+                <li>
+                  The eye patch causes discomfort, allergic reactions,
+                  psychological issues.
+                </li>
+                <li>Misunderstanding between a&nbsp;child and&nbsp;parents.</li>
+                <li>
+                  General vision is neither formed nor restored (binocular
+                  vision)
+                </li>
+              </ul>
+            </div>
+            <div class="right">
+              <img src="../portfolio/img/gameblyo/problem2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case research">
+        <div class="container">
+          <h3>Research phase</h3>
+
+          <div class="case-single-row text-only">
+            <h4>Interviews</h4>
+            <p>
+              Multiple interviews were conducted with domain experts
+              to&nbsp;comprehensively understand the problem space and explore
+              potential solutions.
+            </p>
+          </div>
+          <div class="case-row">
+            <div class="left">
+              <h4>Market Analysis</h4>
+              <p>
+                In <span>2019</span>, approximately <span>99.2M</span> people
+                worldwide had amblyopia, estimated to&nbsp;increase
+                to&nbsp;175.2M by&nbsp;2030 and potentially reach&nbsp;221.9M
+                by&nbsp;2040.
+              </p>
+            </div>
+            <div class="right image-container">
+              <img
+                src="../portfolio/img/gameblyo/market.png"
+                alt="Your Image 1"
+                class="image"
+              />
+              <div class="overlay"></div>
+              <div class="popup">
+                <div class="popup-content">
+                  <div class="popup-header">
+                    <h4>Market Analysis</h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <img
+                    src="../portfolio/img/gameblyo/market.png"
+                    alt="Your Image 1"
+                    class="popup-image"
+                  />
+                  <div class="description">
+                    <p>
+                      In <span>2019</span>, approximately
+                      <span>99.2M</span> people worldwide had amblyopia,
+                      estimated to&nbsp;increase to&nbsp;175.2M by&nbsp;2030
+                      and&nbsp;potentially reach&nbsp;221.9M by&nbsp;2040.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-row">
+            <div class="left">
+              <h4>Competitor Analysis</h4>
+              <p>
+                We assessed various apps, determining their
+                <span>scientific effectivenes.</span>
+              </p>
+              <p>
+                Analyzed successful and unsuccessful patterns, technical and
+                visual aspects, as well as user feedback.
+              </p>
+            </div>
+            <div class="right image-container">
+              <img
+                src="../portfolio/img/gameblyo/competitors.png"
+                alt="Your Image 1"
+                class="image"
+              />
+              <div class="overlay"></div>
+              <div class="popup">
+                <div class="popup-content">
+                  <div class="popup-header">
+                    <h4>Competitor Analysis</h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <img
+                    src="../portfolio/img/gameblyo/competitors.png"
+                    alt="Your Image 1"
+                    class="popup-image"
+                  />
+                  <div class="description">
+                    <p>
+                      We assessed various apps, determining their
+                      <span>scientific effectivenes.</span>
+                    </p>
+                    <p>
+                      Analyzed successful and unsuccessful patterns, technical
+                      and visual aspects, as well as user feedback.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-row">
+            <div class="left">
+              <p>
+                The market is continuously growing and evolving, and&nbsp;<span
+                  >we keep a close eye</span
+                >
+                on that.
+              </p>
+            </div>
+
+            <div class="right image-container">
+              <img
+                src="../portfolio/img/gameblyo/competitors2.png"
+                alt="Your Image 1"
+                class="image"
+              />
+              <div class="overlay"></div>
+              <div class="popup">
+                <div class="popup-content">
+                  <div class="popup-header">
+                    <h4>Competitor Analysis</h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <img
+                    src="../portfolio/img/gameblyo/competitors2.png"
+                    alt="Your Image 1"
+                    class="popup-image"
+                  />
+                  <div class="description">
+                    <p>
+                      The market is continuously growing and evolving,
+                      and&nbsp;<span>we keep a close eye</span>
+                      on that.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-row">
+            <div class="left">
+              <h4>Adaptation Playground</h4>
+              <p>
+                At first, we chose games that worked well with&nbsp;our way
+                of&nbsp;treating amblyopia. We looked for&nbsp;ones
+                <span>we could make quickly and easily.</span>
+              </p>
+            </div>
+            <div class="right image-container">
+              <img
+                src="../portfolio/img/gameblyo/games-adjust.png"
+                alt="Your Image 1"
+                class="image"
+              />
+              <div class="overlay"></div>
+              <div class="popup">
+                <div class="popup-content">
+                  <div class="popup-header">
+                    <h4>Adaptation Playground</h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <img
+                    src="../portfolio/img/gameblyo/games-adjust.png"
+                    alt="Your Image 1"
+                    class="popup-image"
+                  />
+                  <div class="description">
+                    <p>
+                      At first, we chose games that worked well with&nbsp;our
+                      way of&nbsp;treating amblyopia. We looked for&nbsp;ones
+                      <span>we could make quickly and easily.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case inf-arch">
+        <div class="container">
+          <h3>Information architecture</h3>
+          <div class="case-single-row text-only">
+            <h4>Sitemap</h4>
+            <p>
+              My team and I created a&nbsp;sitemap that helped us see
+              the&nbsp;hierarchy of&nbsp;content and structure of
+              the&nbsp;overall app — what leads to what.
+            </p>
+          </div>
+          <div class="case-single-row">
+            <img src="../portfolio/img/gameblyo/sitemap.png" alt="" />
+          </div>
+
+          <div class="case-single-row text-only">
+            <h4>User flows</h4>
+            <p>
+              Creating user flows in our project was essential for understanding
+              user interactions, optimizing their journey and enhancing
+              the&nbsp;platform's usability for amblyopia therapy.
+            </p>
+          </div>
+          <div class="case-single-row">
+            <img src="../portfolio/img/gameblyo/flows.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="case wf-proto">
+        <div class="container">
+          <h3>Wireframes and prototypes</h3>
+          <div class="case-single-row text-only">
+            <p>
+              Once the sitemap and user flows were approved, I moved to Figma
+              to&nbsp;create Warframes. This was an important step that allowed
+              us to test&nbsp;the solution to create a&nbsp;cohesive and
+              intuitive user experience, thereby ensuring that the&nbsp;final
+              product was user-friendly and responsive to&nbsp;user needs.
+            </p>
+          </div>
+          <div class="case-row">
+            <div class="wireframes-wrapper">
+              <img src="../portfolio/img/gameblyo/wireframe.png" alt="" />
+              <img src="../portfolio/img/gameblyo/wireframe2.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="full-w-banner">
+          <img src="../portfolio/img/gameblyo/wireframes.png" alt="" />
+        </div>
+      </section>
+      <section class="case visual">
+        <div class="container character-uikit">
+          <h3>Visual design</h3>
+          <div class="case-row character-moodboard">
+            <div class="left">
+              <h4>Character / Logo</h4>
+              <p>
+                Adding a character to a&nbsp;children's healthcare app makes
+                the&nbsp;experience positive, educational, and supportive. It
+                <span>bridges the&nbsp;gap</span> between healthcare seriousness
+                and child-friendly accessibility.
+              </p>
+              <p>
+                <span>Gamification</span> elements with characters also boost
+                engagement, encouraging children to&nbsp;actively participate.
+              </p>
+            </div>
+
+            <div class="right image-container">
+              <img
+                src="../portfolio/img/gameblyo/character-research.png"
+                alt="Your Image 1"
+                class="image"
+              />
+              <div class="overlay"></div>
+              <div class="popup">
+                <div class="popup-content">
+                  <div class="popup-header">
+                    <h4>Character / Logo</h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <img
+                    src="../portfolio/img/gameblyo/character-research.png"
+                    alt="Your Image 1"
+                    class="popup-image"
+                  />
+                  <div class="description">
+                    <p>
+                      Adding a character to a&nbsp;children's healthcare app
+                      makes the&nbsp;experience positive, educational, and
+                      supportive. It
+                      <span>bridges the&nbsp;gap</span> between healthcare
+                      seriousness and child-friendly accessibility.
+                    </p>
+                    <p>
+                      <span>Gamification</span> elements with characters also
+                      boost engagement, encouraging children to&nbsp;actively
+                      participate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-single-row">
+            <img src="../portfolio/img/gameblyo/character.png" alt="" />
+          </div>
+          <div class="case-single-row">
+            <h4>UI KIT</h4>
+            <p>
+              The development of&nbsp;a&nbsp;comprehensive UI kit for
+              the&nbsp;application ensured the&nbsp;uniformity of design
+              patterns, styles, and components throughout all screens.
+              This&nbsp;approach not only bolstered consistency but also
+              contributed to&nbsp;heightened <span>usability</span> and
+              <span>user satisfaction</span>.
+            </p>
+            <p>
+              Moreover, it streamlined design and development phases, ultimately
+              <span>accelerating progress</span>.
+            </p>
+          </div>
+        </div>
+        <div class="full-w-banner">
+          <img src="../portfolio/img/gameblyo/components.png" alt="" />
+        </div>
+
+        <div class="container final-design">
+          <div class="case-single-row">
+            <div class="left">
+              <h4>Final design</h4>
+              <p>
+                Adding a character to a&nbsp;children's healthcare app makes
+                the&nbsp;experience positive, educational, and supportive. It
+                bridges the&nbsp;gap between healthcare seriousness and
+                child-friendly accessibility.
+              </p>
+              <p>
+                Gamification elements with characters also boost engagement,
+                encouraging children to&nbsp;actively participate.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="full-w-banner videos">
+          <div class="left">
+            <img
+              class="media-content"
+              src="../portfolio/img/gameblyo/video1.png"
+              alt=""
+            />
+          </div>
+          <div class="right">
+            <img
+              class="media-content"
+              src="../portfolio/img/gameblyo/video2.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="container o-r-d-l">
+          <div class="case-row">
+            <div class="left">
+              <h4>Onboarding</h4>
+              <p>
+                Upon first interaction, patients are led through a&nbsp;<span
+                  >personalized setup</span
+                >
+                with gamified elements, ensuring tailored experiences that blend
+                usability with engaging design for&nbsp;optimal user retention.
+              </p>
+            </div>
+
+            <div class="right image-container">
+              <img
+                src="../portfolio/img/gameblyo/onboarding.png"
+                alt="Your Image 1"
+                class="image"
+              />
+              <div class="overlay"></div>
+              <div class="popup">
+                <div class="popup-content">
+                  <div class="popup-header">
+                    <h4>Onboarding</h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <img
+                    src="../portfolio/img/gameblyo/onboarding.png"
+                    alt="Your Image 1"
+                    class="popup-image"
+                  />
+                  <div class="description">
+                    <p>
+                      Upon first interaction, patients are led through
+                      a&nbsp;<span>personalized setup</span>
+                      with gamified elements, ensuring tailored experiences that
+                      blend usability with engaging design for&nbsp;optimal user
+                      retention.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-row">
+            <div class="left">
+              <h4>Rewards system</h4>
+              <p>
+                This strategic approach not only encourages active participation
+                but also fosters a&nbsp;sense of
+                <span>achievement and progress</span>, ultimately elevating
+                the&nbsp;overall user experience within the&nbsp;application.
+              </p>
+            </div>
+
+            <div class="right image-container">
+              <img
+                src="../portfolio/img/gameblyo/rewards.png"
+                alt="Your Image 1"
+                class="image"
+              />
+              <div class="overlay"></div>
+              <div class="popup">
+                <div class="popup-content">
+                  <div class="popup-header">
+                    <h4>Rewards system</h4>
+                    <span class="close">&times;</span>
+                  </div>
+                  <img
+                    src="../portfolio/img/gameblyo/rewards.png"
+                    alt="Your Image 1"
+                    class="popup-image"
+                  />
+                  <div class="description">
+                    <p>
+                      This strategic approach not only encourages active
+                      participation but also fosters a&nbsp;sense of
+                      <span>achievement and progress</span>, ultimately
+                      elevating the&nbsp;overall user experience within
+                      the&nbsp;application.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-single-row text-only">
+            <h4>Doctor platform & Landing page</h4>
+            <p>
+              A specialized <span>platform</span> was developed for healthcare
+              professionals as part of the&nbsp;application ecosystem, enabling
+              seamless engagement with patients and oversight of
+              the&nbsp;treatment journey.
+            </p>
+            <p>
+              Moreover, creating an attractive <span>landing page</span> and
+              <span>pitch deck</span> goes a&nbsp;long way towards launching
+              a&nbsp;marketing campaign and attracting potential investors.
+            </p>
+          </div>
+        </div>
+
+        <div class="full-w-banner admin">
+          <img src="../portfolio/img/gameblyo/dashboard.png" alt="" />
+        </div>
+
+        <div class="full-w-banner landing">
+          <img src="../portfolio/img/gameblyo/landing.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="discover-more">
+        <div class="container">
+          <h3>Discover more</h3>
+          <div class="wrapper">
+            <div class="card more-innovibe">
+              <a href="">
+                <div class="overlay">
+                  <div class="user-content">
+                    <div class="name">
+                      <h3>INNOVIBE</h3>
+                      <p>Digital homeopathic remedy</p>
+                    </div>
+                    <div class="arrow">
+                      <img src="../portfolio/img/arrow-up-linear.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="user-content show-on-mobile">
+                <a href="">
+                <div class="name">
+                  <h3>INNOVIBE</h3>
+                  <p>Digital homeopathic remedy</p>
+                </div>
+        
+                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M8.45765 23.5426L23.5426 8.45764M23.5426 8.45764V19.7713M23.5426 8.45764H12.2289" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  
+       
+            </a>
+            </div>
+            </div>
+            <div class="card more-superdeck">
+              <a href="">
+                <div class="overlay">
+                  <div class="user-content">
+                    <div class="name">
+                      <h3>Superdeck</h3>
+                      <p>Financial presentation software</p>
+                    </div>
+                    <div class="arrow">
+                      <img src="../portfolio/img/arrow-up-linear.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="user-content show-on-mobile">
+                <a href="">
+                <div class="name">
+                  <h3>Superdeck</h3>
+                  <p>Financial presentation software</p>
+                </div>
+        
+                     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M8.45765 23.5426L23.5426 8.45764M23.5426 8.45764V19.7713M23.5426 8.45764H12.2289" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  
+       
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="very-bottom">
+        <div class="container">
+          <p>Thanks for Watching!</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

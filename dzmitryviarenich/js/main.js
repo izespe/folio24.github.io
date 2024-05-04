@@ -2,10 +2,6 @@ window.onload = function() {
     console.clear();
 
 
-    //
-
-
-
 //image opener
 
     document.querySelectorAll('.image').forEach(function(photo) {
