@@ -235,7 +235,7 @@
   }
   .main-page main .case .project-intro {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-between;
     align-items: flex-start;
     min-height: auto;
@@ -253,7 +253,8 @@
   .main-page main .case .btn {
     min-width: 102px;
     margin-right: 0;
-    width: 150px;
+    width: 200px;
+    margin-top: 24px;
     text-align: center;
   }
   .main-page main .case .chips {
@@ -266,6 +267,10 @@
   }
   .main-page main .case .project-preview a {
     background-size: auto 85%;
+  }
+  .main-page .case .btn.btn-swipe:hover {
+    box-shadow: inset 200px 0 0 0 #111111;
+    color: #fff;
   }
   .case-page header .navbar .logo {
     font-size: 18px;
@@ -729,6 +734,25 @@
     padding: 12px 20px 12px 0;
   }
   .case-page footer .container h3 {
+    font-size: 24px;
+  }
+  .case-page header nav .container {
+    padding: 0 20px;
+  }
+  .case-page .case .container {
+    padding: 48px 20px;
+  }
+  .case-page .case-page-preview .container {
+    padding: 24px 20px;
+  }
+  .case-page footer .discover-more .container {
+    padding: 52px 20px;
+  }
+  .case-page .case-page-preview h1 {
+    font-size: 32px;
+    margin: 12px 0 8px;
+  }
+  .case-page .case .container h3 {
     font-size: 24px;
   }
 }
