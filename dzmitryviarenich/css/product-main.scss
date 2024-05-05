@@ -390,6 +390,7 @@ footer {
     }
     .wrapper {
       display: flex;
+      justify-content: space-between;
       width: 100%;
       .card {
         height: 360px;
@@ -397,7 +398,7 @@ footer {
         transition: all 0.4s ease-in-out;
         overflow: hidden;
         display: flex;
-        width: 50%;
+        width: 48%;
         a {
           display: flex;
           width: 100%;
@@ -465,10 +466,10 @@ footer {
         a {
           background-image: url(../img/gameblyo/gameblyo-preview.png);
         }
-        margin-right: 16px;
+        
       }
       .more-dda {
-        margin-left: 16px;
+        
         a {
           background-image: url(../img/dda/dda-preview.png);
         }
@@ -477,10 +478,10 @@ footer {
         a {
           background-image: url(../img/analyzers/analyzers-preview.png);
         }
-        margin-right: 16px;
+        
       }
       .more-lup {
-        margin-left: 16px;
+        
         a {
           background-image: url(../img/lup/lup-preview.png);
         }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>DV / Gameblyo</title>
+    <title>Gameblyo</title>
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
@@ -12,6 +12,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/customplayer.js"></script>
     <script type="text/javascript">
       $(window).on("load", function () {
         var $preloader = $("#p_prldr"),
@@ -470,10 +471,41 @@
 
         <div class="full-w-banner videos">
           <div class="left">
-            <img class="media-content" src="img/gameblyo/video1.png" alt="" />
+            <h4>Registration and Onboarding</h4>
+            <video class="media-content" id="video1">
+              <source src="img/gameblyo/gameblyo1.webm" type="video/webm" />
+              <source src="img/gameblyo/gameblyo1.mp4" type="video/mp4" />
+            </video>
+            <button id="playPauseButton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <p>Play Prototype</p>
+            </button>
           </div>
           <div class="right">
-            <img class="media-content" src="img/gameblyo/video2.png" alt="" />
+            <h4>Game and settings</h4>
+            <video class="media-content" id="video2">
+              <source src="img/gameblyo/gameblyo2.webm" type="video/webm" />
+              <source src="img/gameblyo/gameblyo2.mp4" type="video/mp4" />
+            </video>
+
+            <button id="playPauseButton2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <p>Play Prototype</p>
+            </button>
           </div>
         </div>
 

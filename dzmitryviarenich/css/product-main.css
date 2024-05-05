@@ -361,6 +361,7 @@ footer .container h3 {
 }
 footer .container .wrapper {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 footer .container .wrapper .card {
@@ -369,7 +370,7 @@ footer .container .wrapper .card {
   transition: all 0.4s ease-in-out;
   overflow: hidden;
   display: flex;
-  width: 50%;
+  width: 48%;
 }
 footer .container .wrapper .card a {
   display: flex;
@@ -433,26 +434,14 @@ footer .container .wrapper .card .arrow {
   right: 24px;
   top: 24px;
 }
-footer .container .wrapper .more-gameblyo {
-  margin-right: 16px;
-}
 footer .container .wrapper .more-gameblyo a {
   background-image: url(../img/gameblyo/gameblyo-preview.png);
-}
-footer .container .wrapper .more-dda {
-  margin-left: 16px;
 }
 footer .container .wrapper .more-dda a {
   background-image: url(../img/dda/dda-preview.png);
 }
-footer .container .wrapper .more-analyzers {
-  margin-right: 16px;
-}
 footer .container .wrapper .more-analyzers a {
   background-image: url(../img/analyzers/analyzers-preview.png);
-}
-footer .container .wrapper .more-lup {
-  margin-left: 16px;
 }
 footer .container .wrapper .more-lup a {
   background-image: url(../img/lup/lup-preview.png);

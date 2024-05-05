@@ -151,7 +151,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 130%;
   text-transform: uppercase;
   color: #85858a;
@@ -327,17 +327,19 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  background: #f8f8f7;
+  border: 1px solid #e8e8e8;
   padding: 68px;
+  flex-direction: column;
 }
 .case-page .case .full-w-banner.videos .right {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-image: url(../img/gameblyo/video-bg.png);
-  background-size: cover;
+  border: 1px solid #e8e8e8;
   padding: 68px;
+  border-left: none;
+  flex-direction: column;
 }
 .case-page .case .full-w-banner.videos .media-content {
   max-width: 320px;
@@ -379,7 +381,7 @@
 }
 
 footer .container {
-  padding: 120px 126px;
+  padding: 120px 30px;
 }
 footer .container h3 {
   font-family: "Inter";
@@ -392,15 +394,16 @@ footer .container h3 {
 }
 footer .container .wrapper {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 footer .container .wrapper .card {
-  height: 309px;
+  height: 360px;
   background-color: #f8f8f7;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
   display: flex;
-  width: 50%;
+  width: 48%;
 }
 footer .container .wrapper .card a {
   display: flex;
@@ -464,14 +467,8 @@ footer .container .wrapper .card .arrow {
   right: 24px;
   top: 24px;
 }
-footer .container .wrapper .more-lup {
-  margin-right: 16px;
-}
 footer .container .wrapper .more-lup a {
   background-image: url(../img/lup/lup-preview.png);
-}
-footer .container .wrapper .more-analyzers {
-  margin-left: 16px;
 }
 footer .container .wrapper .more-analyzers a {
   background-image: url(../img/analyzers/analyzers-preview.png);
@@ -491,4 +488,52 @@ footer .very-bottom .container p {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.videos h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #85858a;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.videos #playPauseButton,
+.videos #playPauseButton2 {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px 28px 6px 24px;
+  margin-top: 24px;
+  background: aliceblue;
+  transition: all 0.4s;
+}
+.videos #playPauseButton svg,
+.videos #playPauseButton2 svg {
+  fill: #007bff;
+  width: 32px; /* adjust size as needed */
+  height: 32px; /* adjust size as needed */
+  transition: all 0.4s;
+}
+.videos #playPauseButton p,
+.videos #playPauseButton2 p {
+  color: #5d5d65;
+  line-height: 32px;
+  margin-left: 8px;
+  margin-bottom: 13px;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.videos #playPauseButton:hover svg,
+.videos #playPauseButton2:hover svg {
+  fill: #0056b3;
+}
+.videos #playPauseButton:hover p,
+.videos #playPauseButton2:hover p {
+  color: #111111;
 }/*# sourceMappingURL=gameblyo.css.map */

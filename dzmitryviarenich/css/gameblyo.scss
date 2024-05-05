@@ -184,7 +184,7 @@
         font-family: "Inter";
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 130%;
         text-transform: uppercase;
         color: $text-gray2;
@@ -368,17 +368,19 @@
           justify-content: center;
           align-items: center;
           width: 50%;
-          background: #f8f8f7;
+          border: 1px solid $img-border;
           padding: 68px;
+          flex-direction: column;
         }
         .right {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 50%;
-          background-image: url(../img/gameblyo/video-bg.png);
-          background-size: cover;
+          border: 1px solid $img-border;
           padding: 68px;
+          border-left: none;
+          flex-direction: column;
         }
         .media-content {
           max-width: 320px;
@@ -396,7 +398,7 @@
         }
         ul {
           padding-left: 32px;
-          li{
+          li {
             margin: 8px 0;
           }
         }
@@ -434,7 +436,7 @@
 
 footer {
   .container {
-    padding: 120px 126px;
+    padding: 120px 30px;
     h3 {
       font-family: "Inter";
       font-style: normal;
@@ -446,14 +448,15 @@ footer {
     }
     .wrapper {
       display: flex;
+      justify-content: space-between;
       width: 100%;
       .card {
-        height: 309px;
+        height: 360px;
         background-color: $bg;
         transition: all 0.4s ease-in-out;
         overflow: hidden;
         display: flex;
-        width: 50%;
+        width: 48%;
         a {
           display: flex;
           width: 100%;
@@ -521,10 +524,8 @@ footer {
         a {
           background-image: url(../img/lup/lup-preview.png);
         }
-        margin-right: 16px;
       }
       .more-analyzers {
-        margin-left: 16px;
         a {
           background-image: url(../img/analyzers/analyzers-preview.png);
         }
@@ -547,4 +548,65 @@ footer {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.videos {
+
+  h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #85858a;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  #playPauseButton,
+  #playPauseButton2 {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px 28px 6px 24px;
+    margin-top: 24px;
+    background: aliceblue;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  #playPauseButton svg,
+  #playPauseButton2 svg {
+    fill: #007bff;
+    width: 32px; /* adjust size as needed */
+    height: 32px; /* adjust size as needed */
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  #playPauseButton p,
+  #playPauseButton2 p {
+    color: $text-gray1;
+    line-height: 32px;
+    margin-left: 8px;
+    margin-bottom: 13px;
+    font-weight: 500;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  #playPauseButton:hover svg,
+  #playPauseButton2:hover svg {
+    fill: #0056b3;
+  }
+
+  #playPauseButton:hover p,
+  #playPauseButton2:hover p {
+    color: $text;
+  }
 }

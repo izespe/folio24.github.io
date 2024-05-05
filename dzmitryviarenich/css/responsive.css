@@ -165,11 +165,10 @@
   }
   .case-page .case .full-w-banner.videos .right,
   .case-page .case .full-w-banner.videos .left {
-    padding: 0;
+    padding: 60px 24px;
   }
   .case-page .case .full-w-banner.videos .media-content {
-    max-width: 320px;
-    padding: 40px;
+    max-width: 80%;
   }
   .case-page footer .discover-more .container {
     padding: 80px 60px;
@@ -614,6 +613,16 @@
   .case-page footer .discover-more .container {
     padding: 56px 24px;
   }
+  .case-page .case.visual .full-w-banner {
+    flex-direction: column;
+  }
+  .case-page .case .full-w-banner.videos .right,
+  .case-page .case .full-w-banner.videos .left {
+    width: 100%;
+  }
+  .case-page .case .full-w-banner.videos .media-content {
+    max-width: 70%;
+  }
 }
 @media screen and (max-width: 431px) {
   .main-page header .container {
@@ -755,6 +764,9 @@
   .case-page .case .container h3 {
     font-size: 24px;
   }
+  .case-page .case .full-w-banner.videos .media-content {
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 400px) {
   .main-page header .intro p {
@@ -764,7 +776,7 @@
     width: 100%;
   }
   .case-page .case .full-w-banner.videos .media-content {
-    max-width: 70%;
+    max-width: 80%;
   }
   .case-page footer .container .wrapper .card .user-content.show-on-mobile .name h3 {
     font-size: 16px;

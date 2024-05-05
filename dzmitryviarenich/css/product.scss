@@ -233,7 +233,7 @@
         text-transform: uppercase;
         color: $text-gray2;
         margin-top: 0;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
       }
       a {
         color: blue;
@@ -262,6 +262,9 @@
           text-decoration: underline;
           color: blue;
         }
+      }
+      &.margin-bottom {
+        margin-bottom: 80px;
       }
     }
     &.features {
@@ -298,7 +301,11 @@
     }
     .one-image-row {
       width: 100%;
-      margin-top: 80px;
+      margin-top: 40px;
+      margin-bottom: 80px;
+      &.analyzers {
+        margin-top: 80px;
+      }
       img {
         width: 100%;
         border: 1px solid $img-border;
@@ -374,6 +381,7 @@
     .wrapper {
       overflow: hidden;
       z-index: 1;
+
       &.aus {
         height: 800px;
         background: radial-gradient(
@@ -381,6 +389,41 @@
           #acd2ff 4.94%,
           #73acef 50.5%,
           #0b6ce0 100%
+        );
+      }
+      &.dda-web {
+        background: radial-gradient(
+          61.63% 199.69% at 57.4% 50%,
+          #acd2ff 4.94%,
+          #73acef 50.5%,
+          #0b6ce0 100%
+        );
+      }
+      &.dda-desktop {
+        background: radial-gradient(
+          61.63% 199.69% at 57.4% 50%,
+          #cffaff 4.94%,
+          #69c6d1 50.5%,
+          #4f9fa9 100%
+        );
+      }
+      &.dda-admin {
+        background: radial-gradient(
+          61.63% 199.69% at 57.4% 50%,
+          #bce6ff 4.94%,
+          #6bbbea 50.5%,
+          #006aa9 100%
+        );
+      }
+      &.dda-ds {
+        background: #0b6ce0;
+      }
+      &.lup {
+        background: radial-gradient(
+          61.63% 199.69% at 57.4% 50%,
+          #79c2ff 4.94%,
+          #0d8ae4 50.5%,
+          #065faf 100%
         );
       }
     }
@@ -409,6 +452,9 @@
       &:nth-last-of-type(1) {
         padding-bottom: 0;
         border-bottom: none;
+      }
+      &:first-child {
+        padding-top: 24px;
       }
       .info {
         width: 60%;
@@ -479,13 +525,14 @@ footer {
     .wrapper {
       display: flex;
       width: 100%;
+      justify-content: space-between;
       .card {
         height: 360px;
         background-color: $bg;
         transition: all 0.4s ease-in-out;
         overflow: hidden;
         display: flex;
-        width: 50%;
+        width: 48%;
         a {
           display: flex;
           width: 100%;
@@ -553,10 +600,8 @@ footer {
         a {
           background-image: url(../img/gameblyo/gameblyo-preview.png);
         }
-        margin-right: 16px;
       }
       .more-dda {
-        margin-left: 16px;
         a {
           background-image: url(../img/dda/dda-preview.png);
         }
@@ -565,10 +610,8 @@ footer {
         a {
           background-image: url(../img/analyzers/analyzers-preview.png);
         }
-        margin-right: 16px;
       }
       .more-lup {
-        margin-left: 16px;
         a {
           background-image: url(../img/lup/lup-preview.png);
         }
@@ -695,6 +738,16 @@ footer {
   }
   .product-page.audit .product .text-row p {
     padding-right: 30%;
+  }
+  .product-page.dda-ds .product .one-image-row {
+    margin-top: 40px;
+    margin-bottom: 56px;
+  }
+  .product-page .product .text-row.margin-bottom {
+    margin-bottom: 48px;
+  }
+  .product-page.dda-ds .product .one-image-row.no-margin-bottom {
+    margin-bottom: 0;
   }
 }
 
@@ -878,6 +931,15 @@ footer {
       display: none;
     }
   }
+  .product-page .product .project {
+    padding: 60px 0;
+    &:first-child {
+      padding-top: 24px;
+    }
+    &:nth-last-of-type(1) {
+      padding-bottom: 16px;
+    }
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -1038,7 +1100,7 @@ footer {
   }
   .product-page .product .one-image-row.no-margin-bottom {
     margin-bottom: 0;
-}
+  }
 }
 
 @media screen and (max-width: 431px) {
@@ -1159,9 +1221,29 @@ footer {
   .product-page.audit .product .text-row ul li p {
     padding-right: 0;
   }
+  .product-page .product .project {
+    padding: 48px 0;
+    &:first-child {
+      padding-top: 8px;
+    }
+    &:nth-last-of-type(1) {
+      padding-bottom: 16px;
+    }
+  }
+  .product-page.dda-admin .product .one-image-row {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .product-page.dda-admin .product .text-row h4 {
+    margin-bottom: 24px;
+  }
+  .product-page.dda-ds .product .one-image-row {
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 400px) {
   .product-page .product .two-cells-row .left {
     width: 100%;
   }
